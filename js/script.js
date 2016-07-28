@@ -107,17 +107,13 @@ function scrollDown() {
     mainContainer.appendChild(test);
 
     var test2 = document.createElement('div');
-    test2.id = "main-right-content" + (i);
     test2.style.paddingTop = "150px";
     test2.style.paddingRight = "20px";
     test2.style.position = "absolute";
     test2.style.top = "100%";
     test2.style.opacity = "0";
     test2.style.transition = ".25s all ease-in-out";
-    test2.innerHTML = content[i].innerHTML;
-    mainRightContent0.appendChild(test2);
-
-
+	mainRightContent0.innerHTML = content[i].innerHTML;
 
     setTimeout(function(){
       test.style.top = "0";
@@ -133,9 +129,7 @@ function scrollDown() {
     mainContainer.appendChild(test);
 
     var test2 = document.createElement('div');
-    test2.id = "main-right-content0";
-    test2.innerHTML = content[0].innerHTML;
-    mainRightContent0.appendChild(test2);
+    mainRightContent0.innerHTML = content[0].innerHTML;
     test.style.top = "100%";
     test2.style.top = "100%";
 
